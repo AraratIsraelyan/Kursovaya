@@ -1,0 +1,20 @@
+<?php
+
+use yii\helpers\Html;
+
+/* @var $this yii\web\View */
+/* @var $model app\modules\admin\models\Brigades */
+
+$this->title = 'Добавить бригаду';
+$this->params['breadcrumbs'][] = ['label' => 'Бригады', 'url' => ['index']];
+$this->params['breadcrumbs'][] = $this->title;
+?>
+<div class="brigades-create">
+
+    <h1><?= Html::encode($this->title) ?></h1>
+
+    <?= $this->render('_form', [
+        'model' => $model,
+    ]) ?>
+
+</div>
